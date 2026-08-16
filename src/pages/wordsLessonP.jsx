@@ -13,7 +13,7 @@ import Header from "../components/UI/header/header";
 import {en, ru} from "../components/data/langText";
 
 const WordsLessonP = () => {
-    const {setAnswerBlocksText, inputValues, setInputValues, lessonType, livesOfLesson, settings, switchedLanguage} = useContext(Context);
+    const {setAnswerBlocksText, inputValues, setInputValues, lessonType, settings, switchedLanguage} = useContext(Context);
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
@@ -27,6 +27,7 @@ const WordsLessonP = () => {
                         lessonType === 'make-word-from-letters-lesson' && settings.makeWordFromLettersInputs}, (_) => []))
             setAnswerBlocksText([])
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location]);
 
     function handleInputChange(index, newValue) {

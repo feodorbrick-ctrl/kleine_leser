@@ -23,6 +23,7 @@ const LessonP = () => {
         if (location.pathname === '/lesson') {
             setLivesOfLesson(inputValues.length / 2);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location]);
 
     useEffect(() => {
@@ -31,12 +32,14 @@ const LessonP = () => {
             setDontSwitchAnswers([...answerBlocksText[lessonId]]);
             setSwitchAnswers([]);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [lessonId]);
 
     useEffect(() => {
         if (livesOfLesson < 0) {
             navigate('/')
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [livesOfLesson])
 
     function nextLesson() {

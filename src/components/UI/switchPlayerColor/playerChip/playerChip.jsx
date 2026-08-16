@@ -30,6 +30,9 @@ const PlayerChip = ({color = 'green'}) => {
         case "black":
             color = ['darkgrey', "#E8EDF2"];
             break;
+        default:
+            color = ["skyblue", 'blue'];
+            break;
     }
     return (
         <div className={cl.playerChip}>

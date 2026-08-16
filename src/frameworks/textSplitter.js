@@ -29,6 +29,8 @@ class textSplitter {
                 case typesOfTheLessons.makingTheSentences:
                     this.#sentenceSplitter(value);
                     break;
+                default:
+                    this.res = []
             }
         } else {
             return ''

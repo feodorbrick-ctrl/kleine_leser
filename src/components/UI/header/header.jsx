@@ -36,6 +36,7 @@ const Header = () => {
 
     useEffect(() => {
         setUserData({stars: userData.stars, colorOfIcon: color});
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [color])
 
     function saveSettings() {
