@@ -1,0 +1,29 @@
+.slider {
+    position: relative;
+    left: 27%;
+    width: 30vw;
+    height: 250px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: center;
+    border: #D552A3 5px dotted;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    font-family: "Roboto Light", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    min-width: 100%;
+    height: 10%;
+    flex-shrink: 0;
+    scroll-snap-align: end;
+    padding-bottom: 18%;
+}

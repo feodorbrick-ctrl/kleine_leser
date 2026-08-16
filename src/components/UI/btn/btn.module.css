@@ -1,0 +1,25 @@
+.btn {
+    font-family: 'Raleway', sans-serif;
+    border: 5px solid transparent;
+    border-image: linear-gradient(135grad, #462C7D, #831C91, #D552A3) 1;
+    background: linear-gradient(135grad, rgba(70, 44, 125, 0.5), rgba(131, 28, 145, 0.5), rgba(213, 82, 163, 0.5));
+    padding: 5px;
+    font-weight: 550;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.btn:active {
+    border-color: #fff1bc;
+    background-color: white;
+    box-shadow: 0 0 10px navajowhite;
+    border-image: none;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+    transform: scale(1.01);
+}

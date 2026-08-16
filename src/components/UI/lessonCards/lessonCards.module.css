@@ -1,0 +1,37 @@
+.lessonCard {
+    background-color: rgba(255,255,255,0.70);
+    border-radius: 15px;
+    border: 3px solid lightgray;
+    box-shadow: 0 0 20px rgb(255,255,255);
+    width: 30vw;
+    height: fit-content;
+    padding: 20px;
+    font-family: "Roboto Light", sans-serif;
+    justify-items: center;
+    cursor: crosshair;
+    margin: 20px;
+    transition: all 0.40s ease-in-out;
+}
+
+.lessonCard:not(:has(img:hover)):hover {
+    transform: rotate(0.8grad) scale(1.02);
+}
+
+.lessonImgContainer {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.cardDescription {
+    padding: 10px;
+}
+
+.lessonImg {
+    width: 100%;
+    height: 40%;
+    transition: all 0.8s;
+}
+
+.lessonImg:hover {
+    transform: scale(1.2);
+}

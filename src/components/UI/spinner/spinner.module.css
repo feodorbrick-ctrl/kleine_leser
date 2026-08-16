@@ -1,0 +1,48 @@
+.spinner {
+    margin-top: -35px;
+    height: 50px;
+    width: 50px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(135grad, #462C7D, #831C91, #D552A3) 1;
+    position: relative;
+    left: 45%;
+    animation: App-logo-spin 3s infinite linear;
+}
+
+@keyframes App-logo-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(60deg);
+    }
+
+    30% {
+        transform: rotate(120deg);
+    }
+
+    40% {
+        transform: rotate(200deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    70% {
+        transform: rotate(300deg);
+    }
+
+    80% {
+        transform: rotate(240deg);
+    }
+
+    90% {
+        transform: rotate(200deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

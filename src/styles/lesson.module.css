@@ -1,0 +1,40 @@
+.container {
+    width: 100vw;
+    justify-content: center;
+    display: grid;
+}
+
+.answerLine {
+    height: 0;
+    position: relative;
+    top: 11.5vw;
+    width: 50vw;
+}
+
+.bankOfWords {
+    display: flex;
+    width: 50vw;
+    position: relative;
+    top: 50vh;
+    height: 15vh;
+}
+
+.answerZone {
+    display: grid;
+    height: fit-content;
+}
+
+.answers {
+    position: relative;
+    top: 12vw;
+    height: fit-content;
+    display: flex;
+}
+
+.enterBtn {
+    position: absolute;
+    width: 50vw;
+    height: 50px;
+    bottom: 5vh;
+    left: -35vw;
+}

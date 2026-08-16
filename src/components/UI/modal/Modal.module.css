@@ -1,0 +1,31 @@
+.MyModal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.75);        /* dark dim, button is barely visible */
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.MyModalContent {
+    padding: 25px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 16px;
+    min-width: 250px;
+    margin: 0 10px;
+    z-index: 1000;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.MyModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

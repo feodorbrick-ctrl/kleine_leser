@@ -1,0 +1,11 @@
+.wordsLesson {
+    display: grid;
+    margin-left: 10%;
+    position: relative;
+    top: 2.5vh;
+}
+
+.texts {
+    position: relative;
+    bottom: 4vh;
+}
