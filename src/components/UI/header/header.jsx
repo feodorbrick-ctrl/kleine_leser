@@ -29,15 +29,15 @@ const Header = () => {
     let language = switchedLanguage.headerText
 
     useEffect(() => {
-        if (userData.colorOfIcon !== color) {
-            setColor(userData.colorOfIcon);
-        }
-    }, [userData]);
+        setColor(userData.colorOfIcon);
+    }, [userData.colorOfIcon, setColor]);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        setUserData({stars: userData.stars, colorOfIcon: color});
-    }, [color])
+        setUserData(prevData => ({
+            ...prevData,
+            colorOfIcon: color
+        }));
+    }, [color, setUserData]);
 
     function saveSettings() {
         const finalSettingsValues = settingsValue.map(Number);
