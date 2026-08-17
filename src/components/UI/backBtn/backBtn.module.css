@@ -1,6 +1,10 @@
 .crossBtn {
-    width: 7vh;
-    height: 7vh;
+    right: 10%;
+}
+
+.crossBtnImg {
+    width: 80%;
+    height: 80%;
     margin: auto;
     position: absolute;
     top: 10%;
