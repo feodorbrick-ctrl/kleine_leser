@@ -8,14 +8,15 @@ import {useNavigate, useLocation} from "react-router-dom";
 import Header from "../components/UI/header/header";
 
 const EndOfLessonP = () => {
-    const {livesOfLesson, userData} = useContext(Context);
+    const {livesOfLesson, userData, setUserData} = useContext(Context);
     const navigate = useNavigate()
     const location = useLocation()
 
     useEffect(() => {
         if (location.pathname === '/lesson-end') {
-            userData.stars = userData.stars + livesOfLesson * 2 + 2
+            setUserData({stars: userData.stars + (livesOfLesson * 2) + 2, colorOfIcon: userData.colorOfIcon});
         }
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[location])
     return (

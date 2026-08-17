@@ -6,13 +6,13 @@ import Btn from "../btn/btn";
 const BackBtn = ({callback}) => {
     return (
         <Btn
-            className={cl.crossBtn}
             width='10vh'
             height='10vh'
             left='85%'
+            right='10%'
             btnName={
                 <img
-                    className={cl.crossBtnImg}
+                    className={cl.crossBtn}
                     src={crossImage}
                     alt="cross"
                 />
